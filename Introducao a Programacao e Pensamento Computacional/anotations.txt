@@ -1,0 +1,16 @@
+#Fundamentos -Análise de Código
+
+No computador existe a linguagem de alto nível e de baixo nível como o assemble, nós devs de java, python, js são as linguagens de alto nível, ou seja tem que haver uma forma de fazer a maquina entender essa linguagem de alto nível já que ela é de baixo nível e existem duas formas linguagem que são traduzidas e linguagens interpretadas o Java ele é uma linguagem traduzida tem um compilador que faz algumas analises entre elas a léxica, sintáxica e semântica, na léxica é onde ocorre a remoção de espaços desnecessário, remove os comentários que deixamos no código, e decompõe o código de blocos ne que o pessoal chama de tokens. na analise sintaxica vem estrutura ne então a forma de escrever no Java Scan para realizar a entrada de dados e o Scan deve ser escrito com S maiúsculo se escrever minúsculo vc estaria tendo um erro de sintaxe, e esses erros os compiladores geralmente alarmam em cima do problema na exata linha esta com esse exato problema então é mais fácil de resolver, e a semântica a semântica é a lógica então se você quer verificar se um valor é igual a zero se vc colocar if x = 0 um único igual esta atribuindo valor então se x não for igual a zero não entra nesse if, então não aconteceu o esperado houve um ero de semântica na sintaxe existe somente um = e faz a atribuição, houve um erro de lógica esse é um pouco mais difícil identificar pois, provavelmente a estrutura da linha de código está correta apeans só não esta tendo o resultado esperado.
+
+#Paradigmas
+
+Forma de resolução de problema limitado a um contexto específico
+
+Classificação dos paradigmas
+Orientação a objeto, Procedural, Funcional, Estruturado, Computação distribuída, Lógico
+Procedural, chamadas sucessivas e procedimentos separados, sequencial
+Funcional, fundamentado em instruções baseadas em funções
+Estruturado, estrutura de blocos alinhados
+CD, Funções executadas de forma independente
+
+POO análoga a vida real, trata objetos, objeto tem características que são os atributos, métodos e estado e podemos abstrair para uma classe, uma classe aloca em memória uma instancia dessa classe um objeto e suas operações associadas que são os métodos reuso de código

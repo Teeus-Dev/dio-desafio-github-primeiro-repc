@@ -1,0 +1,57 @@
+# Chave SSH
+
+CRIAR CHAVE SSH
+ssh-keygen -t ed25519 -C @gmail.com
+cd .ssh
+ls
+cat id_ed25519.pub
+eval $(ssh-agent -s)
+ssh-add id_ed25519
+
+# Comandos
+
+Windows
+cd
+dir
+mkdir
+del / rmdir /S /Q
+
+Unix
+cd
+ls
+mkdirrm -rf
+
+ls -a (mostrar arquivos ocultos)
+mkdir criar pasta
+ctrl l
+mv strogonoff.md ./receitas
+
+git config --list (tudo que esta configurado nas suas config)
+git config --global --unset user.email
+git config --global user.email "@gmail"
+git config --global user.name "nome"
+
+git init (inicializa um repisItório do git)
+git add * (traz o arquivo de untracked,modified para o stage)
+git commit -m "commit inicial" (Envelopa os arquivos do stage, salva, cria um snapshot e todos os arquivos voltam para unmodified)
+git status (qual status estamos, stage, untracked,modified,unmodified)
+
+git remote add origin .git
+git remote -v (lista de repositórios cadastradas remotas)
+git push origin master (é a branch que estamos enviando esse código)
+
+conflitos
+git pull origin master (puxa o ultimo arquivo do repositorio final e mostra local onde esta difere do arquivo que vc quer envial para alteração manual)
+git add *
+git comit -m "resolve conflitos"
+git push origin master
+
+Conceitos
+
+SHA1 algoritmo de criptografia e serve para verificar se o diretório/arquivo teve alguma alteração
+
+Objetos do Git
+BLOBS, TREES, COMMITS
+
+COMMITS > TREES > BLOBS cada um com seu hash
+Ambiente de desenvolvimento demos git add movendo para stage e git commit movendo para o repositorio local
